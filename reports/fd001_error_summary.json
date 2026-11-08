@@ -1,0 +1,21 @@
+{
+  "model": "xgboost",
+  "population": "All cycles from held-out validation engines",
+  "error_definition": "predicted RUL minus actual RUL",
+  "overall": {
+    "records": 4070,
+    "mae_cycles": 25.68297936633907,
+    "rmse_cycles": 35.03329389028663,
+    "mean_error_cycles": 1.5415125350368561,
+    "overestimate_percent": 54.98771498771499
+  },
+  "equal_engine_weighted_mae_cycles": 24.859021755862166,
+  "official_test_used": false,
+  "notes": [
+    "Positive error means remaining life is overestimated.",
+    "RUL bands use ground truth for retrospective analysis only.",
+    "RUL bands are not operational maintenance thresholds.",
+    "Validation contains complete run-to-failure trajectories.",
+    "No models were retrained."
+  ]
+}

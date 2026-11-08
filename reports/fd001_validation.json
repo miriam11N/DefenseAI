@@ -1,0 +1,59 @@
+{
+  "dataset": "NASA C-MAPSS FD001",
+  "data_type": "Simulated turbofan engine degradation",
+  "processed_at_utc": "2026-11-08T21:00:40.868156+00:00",
+  "download_source_type": "Third-party raw-file mirror",
+  "files": [
+    {
+      "filename": "train_FD001.txt",
+      "source_url": "https://huggingface.co/datasets/SoyVitou/NASA-C-MAPSS-Turbofan-Engine/resolve/main/data/train_FD001.txt",
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "bytes": 3515356
+    },
+    {
+      "filename": "test_FD001.txt",
+      "source_url": "https://huggingface.co/datasets/SoyVitou/NASA-C-MAPSS-Turbofan-Engine/resolve/main/data/test_FD001.txt",
+      "sha256": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+      "bytes": 2228855
+    },
+    {
+      "filename": "RUL_FD001.txt",
+      "source_url": "https://huggingface.co/datasets/SoyVitou/NASA-C-MAPSS-Turbofan-Engine/resolve/main/data/RUL_FD001.txt",
+      "sha256": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca",
+      "bytes": 429
+    }
+  ],
+  "train_rows": 20631,
+  "test_rows": 13096,
+  "train_engines": 100,
+  "test_engines": 100,
+  "raw_sensor_file_columns": 26,
+  "training_rul_min": 0,
+  "training_rul_max": 361,
+  "constant_training_features": [
+    "setting_3",
+    "sensor_1",
+    "sensor_5",
+    "sensor_10",
+    "sensor_16",
+    "sensor_18",
+    "sensor_19"
+  ],
+  "checks_passed": [
+    "Expected row and column counts",
+    "Numeric and finite measurements",
+    "Engine IDs 1 through 100",
+    "Unique engine-cycle pairs",
+    "Consecutive cycles starting at 1",
+    "100 non-negative integer test RUL labels",
+    "Training trajectories end at RUL zero"
+  ],
+  "notes": [
+    "RUL is measured in operating cycles, not hours.",
+    "Training RUL is uncapped.",
+    "Test targets apply only to each engine's last observed cycle.",
+    "Training and test engine IDs are split-local identifiers.",
+    "No scaling, feature selection, or model training performed.",
+    "File hashes record local content; they do not certify NASA authenticity."
+  ]
+}

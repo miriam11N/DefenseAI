@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Research datasets and generated model artifacts
+data/raw/
+data/processed/
+data/synthetic/
+artifacts/
+*.joblib
+*.ubj
+*.pkl
+
+# Uploaded or private documents
+*.pdf
+uploads/
+private_documents/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
